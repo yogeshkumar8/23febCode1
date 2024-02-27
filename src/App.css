@@ -18,6 +18,36 @@
   outline-color: #cfc7c7 !important; 
 
 }
+.icon1{
+  height: 30px;
+  width: 30px;
+  padding-left: 5px;
+  transition: all 2s;
+}
+
+.deco{
+  text-decoration: none ;
+  color: #000;
+  
+}
+.lable{
+  font-size: small;
+  color: black;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+.e-input {
+  min-width: 100%;
+  padding: 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 2%; 
+  outline-color:#cfc7c7;
+
+  gap: 5px;
+}
 .body{
   margin: 0;
   padding: 0;
@@ -65,6 +95,45 @@
   }
 } */
 
+.button1{
+  background-color: #1f1827;
+  /* background-color: #04AA6D;  */
+  border: none; 
+  color: white;
+  /* padding: 10px 10px; */
+  padding-left: 18px;
+  padding-right: 20px;
+  padding-bottom: 4px;
+  padding-top: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 400;
+}
+.button2{
+  background-color:rgb(218, 187, 13);
+  border: none;
+  color: white;
+  /* padding: 10px 10px; */
+  padding-left: 18px;
+  padding-right: 20px;
+  padding-bottom: 4px;
+  padding-top: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 400;
+}
 /* Media query targeting input tags with a min-width of 1200px */
 @media (min-width: 1321px) and ((max-width: 1433px)) {
   .left-part{
@@ -74,7 +143,7 @@
     width: 32%;
   }
   .e-input {
-    width: 280px;
+    min-width: 100%;
     padding: 1px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -120,46 +189,9 @@
   .m{
     margin-right: 10px;
   }
+
   
-  .button1{
-    background-color: #1f1827;
-    /* background-color: #04AA6D;  */
-    border: none; 
-    color: white;
-    /* padding: 10px 10px; */
-    padding-left: 18px;
-    padding-right: 20px;
-    padding-bottom: 4px;
-    padding-top: 3px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    border-radius: 5px;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    font-weight: 400;
-  }
-  .button2{
-    background-color:rgb(218, 187, 13);
-    border: none;
-    color: white;
-    /* padding: 10px 10px; */
-    padding-left: 18px;
-    padding-right: 20px;
-    padding-bottom: 4px;
-    padding-top: 3px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    border-radius: 5px;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    font-weight: 400;
-  }
+
   .button3{
     background-color: rgb(204, 59, 33);
     border: none;
@@ -184,13 +216,7 @@
   .SideBox::shadow{
     color: blue;
   }
-  .lable{
-    font-size: small;
-    color: black;
-    font-weight: 500;
-    font-family: Arial, Helvetica, sans-serif;  
-  }
-  
+
   .SideBox-heading{
   
     font-size: 15px;
@@ -208,7 +234,7 @@
     width: 42%;
   }
   .e-input {
-    width: 330px;
+    min-width: 100%;
     padding: 1px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -323,7 +349,7 @@
     width: 45%;
   }
   .e-input {
-    width: 260px;
+    min-width: 100%;
     padding: 1px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -476,3 +502,71 @@
       outline-color: #cfc7c7;
     }
   }
+
+
+
+  *{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+  }
+  .container{
+    display:flex;
+  }
+  main{
+    width: 100%;
+    padding: 20px;
+  }
+  .sidebar{
+    /* background: #000; */
+    /* color: black; */
+    height: 100vh;
+    width: 17%;
+    transition: all 0.5s;
+  }
+  .top_section{
+    display: flex;
+    align-items:center;
+    /* padding:20px 15px; */
+  }
+  .logo{
+    font-size: 30px;
+  }
+  .bars{
+    display: flex;
+    font-size: 25px;
+    /* margin-left: 50px; */
+  }
+  .link{
+    display: flex;
+    color: black;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+  }
+  .link:hover{
+    background:lightskyblue;
+    color: #000;
+    transition: all 0.5s;
+  }
+  .active{
+    background: lightskyblue;
+    color: #000;
+  }
+  .icon, .link_text{
+    font-size: 20px;
+  }
+
+
+
+.accormain .accordion-header{
+    border-radius: 5px;
+  }
+  .accordion-header button{
+    padding: 13px 13px;
+    border-radius: 5px;
+    margin: 2px 0px;
+  }
+
+
+  

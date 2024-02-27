@@ -66,8 +66,231 @@ const BasicDetail = () => {
   const editHandler = () => {};
   return (
     <div>
-      <div className="row m-3">
-        {/* <div className="col-md-3"></div> */}
+      <div className="container main">
+        <div className="row m-5">
+          <h4>User Master</h4>
+          <div className=" col-md-12  d-flex flex-wrap ">
+            <div className=" col-md-4  d-flex flex-wrap gap-4  ">
+              <input type="text" className="e-input1" />
+              <input type="text" className="e-input1" />
+              <input type="text" className="e-input1" />
+            </div>
+
+            <div className=" col-md-4 d-flex flex-wrap gap-4 ">
+              <input type="text" className="e-input1" />
+              <input type="text" className="e-input1" />
+              <input type="text" className="e-input1" />
+            </div>
+
+            <div className=" col-md-4 d-flex flex-wrap gap-4 ">
+              <input type="text" className="e-input1" />
+              <input type="text" className="e-input1" />
+              <input type="text" className="e-input1" />
+            </div>
+          </div>
+          {/* <form onSubmit={handleSubmit}>
+            <div className="d-flex flex-wrap gap-4 mb-2 ">
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  User id <p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="employeeCode"
+                  value={formData.employeeCode}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+              <div className="d-flex flex-column">
+                <label className=" lable rounded">
+                  Customer
+                  <p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="passwordResetPolicy"
+                  value={formData.passwordResetPolicy}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  User Name<p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="employeeType"
+                  value={formData.employeeType}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  Address<p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="employeeName"
+                  value={formData.employeeName}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  State<p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  City
+                  <p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="dobRecord"
+                  value={formData.dobRecord}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  PinCode
+                  <p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="dobActual"
+                  value={formData.dobActual}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  Email<p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="fathersName"
+                  value={formData.fathersName}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  Phone No<p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="mothersName"
+                  value={formData.mothersName}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  Email<p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="maritalStatus"
+                  value={formData.maritalStatus}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+                <select>
+                    <option value={"Married"}>Married</option>
+                    <option value={"UnMarried"}>UnMarried</option>
+                  </select>
+              </div>
+
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  Password
+                  <p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="highestQualification"
+                  value={formData.highestQualification}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  Confirm Password<p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="bloodGroup"
+                  value={formData.bloodGroup}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  Address<p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="address"
+                  value={formData.address}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+              <div className="d-flex flex-column">
+                <label className="lable">
+                  Customer Photo<p className="text-danger d-inline">*</p>
+                </label>
+                <input
+                  type="text"
+                  name="emergencyContact"
+                  value={formData.emergencyContact}
+                  onChange={handleInputChange}
+                  className="e-input"
+                />
+              </div>
+            </div>
+
+            <div className="d-flex mt-4 gap-4">
+              <button type="submit" className="btn btn-primary px-4">
+                Save
+              </button>
+              <button type="button" className="btn btn-warning px-4">
+                Export
+              </button>
+              <button type="reset" className="btn btn-danger px-4">
+                Reset
+              </button>
+            </div>
+          </form> */}
+        </div>
+      </div>
+
+      {/* <div className="row m-3">
+        <div className="col-md-3"></div>
         <div className="accordion-item col-md-9">
           <div className="">
             <h4>Customer User Master</h4>
@@ -199,10 +422,10 @@ const BasicDetail = () => {
                     onChange={handleInputChange}
                     className="e-input"
                   />
-                  {/* <select>
+                  <select>
                     <option value={"Married"}>Married</option>
                     <option value={"UnMarried"}>UnMarried</option>
-                  </select> */}
+                  </select>
                 </div>
 
                 <div className="d-flex flex-column">
@@ -272,9 +495,9 @@ const BasicDetail = () => {
           </div>
         </div>
         <div className=" col-md-3 SideBox"></div>
-      </div>
+      </div> */}
 
-      <div>
+      {/* <div>
         <thead className="border">
           <tr>
             <th>Action</th>
@@ -295,12 +518,12 @@ const BasicDetail = () => {
           </tr>
         </thead>
         <tbody>
-          {/* <td>
-              <div>
-                <FaRegEdit />
-                <MdOutlineDeleteOutline />
-              </div>
-            </td> */}
+          <td>
+            <div>
+              <FaRegEdit />
+              <MdOutlineDeleteOutline />
+            </div>
+          </td>
           {submittedData.map((data, index) => (
             <tr key={index}>
               <td>
@@ -326,7 +549,7 @@ const BasicDetail = () => {
             </tr>
           ))}
         </tbody>
-      </div>
+      </div> */}
     </div>
   );
 };
